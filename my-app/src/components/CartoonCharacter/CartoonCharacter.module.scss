@@ -1,0 +1,31 @@
+.round {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.roundDeadCharacter {
+    background-color: red;
+}
+
+.imageCharacter {
+    display: block;
+    margin: auto;
+    width: 250px;
+    border-radius: 25px;
+}
+
+.infoCharacter {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 272px;
+    height: 84px;
+    background-color: aquamarine;
+    text-align: center;
+    align-content: center;
+}

@@ -1,0 +1,24 @@
+.iconWrapper {
+    text-align: center;
+    display: grid;
+}
+
+.link {
+    display: flex;
+}
+
+.iconLayer {
+   word-break: break-all;
+}
+
+.icon {
+    margin: 0 auto;
+}
+
+.root {
+    color: #424242;
+    display: flex;
+    text-decoration: none;
+    max-width: 150px;
+    min-width: 150px;
+}
