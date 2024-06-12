@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from "./page.module.scss"
 import { CartoonCharacter } from "@/components/CartoonCharacter/CartoonCharacter"
 import { getMultipleCharacters } from "@/api/rickAndMorty.service"

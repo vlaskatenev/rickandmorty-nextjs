@@ -1,6 +1,7 @@
 import { IGetCharacter } from "@/interfaces/interfaces"
 import { MAIN_URL_RICK_AND_MORTY } from "./variables"
 import { requestBuilder } from "./requestBuilder"
+import { JSONObject } from "@/interfaces/mostTypes"
 
 // Функция запрос на сервер от куда приходят неизвестные данные.
 // Можно передавать дженерики <Req, Res> как аргументы и переиспользовать
@@ -13,10 +14,13 @@ import { requestBuilder } from "./requestBuilder"
 //     return character
 // } 
 
-export const getCharacter = (id: string): Promise<IGetCharacter> => requestBuilder({
+// добавил JSONObject так как использую этот объект в функции для преобразования JSON
+type TGetCharacter = IGetCharacter & JSONObject
+
+export const getCharacter = (id: string): Promise<TGetCharacter> => requestBuilder({
     url: `${MAIN_URL_RICK_AND_MORTY}/character/${id}`
 })
 
-export const getMultipleCharacters = (nums: number[]): Promise<IGetCharacter[]> => requestBuilder({
+export const getMultipleCharacters = (nums: number[]): Promise<TGetCharacter[]> => requestBuilder({
     url: `${MAIN_URL_RICK_AND_MORTY}/character/1,${nums}`
 })

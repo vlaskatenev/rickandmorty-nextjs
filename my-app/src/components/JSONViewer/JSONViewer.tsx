@@ -1,13 +1,17 @@
 import styles from '@/components/JSONViewer/JSONViewer.module.scss'
-import { IGetCharacter } from '@/interfaces/interfaces'
+import { syntaxHighlightJSON } from '@/helpers/syntaxHighlightJSON'
+import { TJSONValue } from '@/interfaces/mostTypes'
 
-interface IJSONViewer { json: IGetCharacter }
+
+interface IJSONViewer { json: TJSONValue }
 
 export function JSONViewer({ json }: IJSONViewer) {
     
     return (
-            <div className={styles.code}>
-                {JSON.stringify(json, null, 4)}
+        <div className={styles.jsonContainer}>
+            <div className={styles.jsonContent}>
+                <pre className={styles.pre} dangerouslySetInnerHTML={{__html: syntaxHighlightJSON(json)}} />
             </div>
+        </div>
             )
 }

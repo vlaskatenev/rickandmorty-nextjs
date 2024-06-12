@@ -25,9 +25,8 @@ export function CartoonCharacter({character, isSmallDescription, width, height}:
                 <div className={cn(styles.round, {[styles.roundDeadCharacter]: character.status === 'Dead'})}/>
                 {character.name}: {isSmallDescription ? '' : character.status} <br/>
                 Location: {character.location.name}
-                <Link href={'/character/' + character.id} title='Go'>Go</Link>
             </div>
-            
+            {isSmallDescription ? <Link href={'/character/' + character.id} title='Go' className={styles.link} >Go</Link> : ''}
         </div>
     )
 }

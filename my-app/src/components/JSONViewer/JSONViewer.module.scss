@@ -1,8 +1,25 @@
-.code {
-    padding: 10px;
+
+
+.jsonContainer {
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    position: relative;
+}
+
+.jsonContent {
+    background-color: #333;
     border-radius: 5px;
-    box-shadow: 10px;
-    background-color: beige;
+    padding: 15px;
+    overflow: auto;
+}
+
+.pre {
+    margin: 0;
     font-size: 14px;
-    font-style: italic;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #ddd;
 }
