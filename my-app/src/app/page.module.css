@@ -3,9 +3,8 @@
 }
 .main {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   padding: 6rem;
   min-height: 100vh;
 }

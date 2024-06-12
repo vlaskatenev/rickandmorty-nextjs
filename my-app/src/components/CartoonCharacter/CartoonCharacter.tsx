@@ -10,7 +10,7 @@ interface ICartoonCharacter {
 
 export function CartoonCharacter({character}: ICartoonCharacter) {
     return (
-        <>
+        <div className={styles.root}>
             <Image
                 src={character.image}
                 width={250}
@@ -25,6 +25,6 @@ export function CartoonCharacter({character}: ICartoonCharacter) {
                 <Link href={'/character/' + character.id} title='Go'>Go</Link>
             </div>
             
-        </>
+        </div>
     )
 }
