@@ -13,7 +13,7 @@ async function Character({params}: IServerSideComponentProp<{id: string}>) {
     return (
       <div className={styles.root}>
       
-      <CartoonCharacter character={character} />
+      <CartoonCharacter character={character} width={250} height={250} />
          
         <br />
         

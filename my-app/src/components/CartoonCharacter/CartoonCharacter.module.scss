@@ -1,5 +1,13 @@
 .root {
-    margin: 10px;
+    position: relative;
+
+    &:hover .smallImageDescription {
+        position: relative;
+        bottom: 86px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        width: 100%;
+    }
 }
 .round {
     position: absolute;
@@ -18,8 +26,6 @@
 .imageCharacter {
     display: block;
     margin: auto;
-    width: 250px;
-    border-radius: 25px;
 }
 
 .infoCharacter {

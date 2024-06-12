@@ -6,21 +6,24 @@ import Link from 'next/link'
 
 interface ICartoonCharacter {
     character: IGetCharacter
+    isSmallDescription?: boolean
+    width?: number
+    height?: number
 }
 
-export function CartoonCharacter({character}: ICartoonCharacter) {
+export function CartoonCharacter({character, isSmallDescription, width, height}: ICartoonCharacter) {
     return (
         <div className={styles.root}>
             <Image
                 src={character.image}
-                width={250}
-                height={250}
+                width={width}
+                height={height}
                 alt={character.name}
                 className={styles.imageCharacter}
                 />
-            <div className={styles.infoCharacter}>
+            <div className={cn(styles.infoCharacter, {[styles.smallImageDescription]: isSmallDescription})}>
                 <div className={cn(styles.round, {[styles.roundDeadCharacter]: character.status === 'Dead'})}/>
-                {character.name}: {character.status} <br/>
+                {character.name}: {isSmallDescription ? '' : character.status} <br/>
                 Location: {character.location.name}
                 <Link href={'/character/' + character.id} title='Go'>Go</Link>
             </div>
