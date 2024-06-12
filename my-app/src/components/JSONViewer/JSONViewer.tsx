@@ -1,17 +1,16 @@
 import styles from '@/components/JSONViewer/JSONViewer.module.scss'
 import { syntaxHighlightJSON } from '@/helpers/syntaxHighlightJSON'
 import { TJSONValue } from '@/interfaces/mostTypes'
+import { ContentField } from '@/shared/ContentField/ContentField'
 
 
-interface IJSONViewer { json: TJSONValue }
+interface IJSONViewer { json: TJSONValue, className: string | { [key: string]: boolean } }
 
-export function JSONViewer({ json }: IJSONViewer) {
+export function JSONViewer({ json, className }: IJSONViewer) {
     
     return (
-        <div className={styles.jsonContainer}>
-            <div className={styles.jsonContent}>
-                <pre className={styles.pre} dangerouslySetInnerHTML={{__html: syntaxHighlightJSON(json)}} />
-            </div>
-        </div>
+        <ContentField title='Response' className={className}>
+            <pre className={styles.pre} dangerouslySetInnerHTML={{__html: syntaxHighlightJSON(json)}} />
+        </ContentField>
             )
 }

@@ -1,0 +1,26 @@
+ 
+.infoCharacter {
+    background: linear-gradient(135deg, #f39c12, #e74c3c);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .infoCharacter:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  }
+
+  .infoCharacter h4 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+  }
+
+  .infoCharacter p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.4;
+  }

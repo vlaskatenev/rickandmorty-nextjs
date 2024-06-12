@@ -14,8 +14,8 @@ import { JSONObject } from "@/interfaces/mostTypes"
 //     return character
 // } 
 
-// добавил JSONObject так как использую этот объект в функции для преобразования JSON
-type TGetCharacter = IGetCharacter & JSONObject
+// добавил JSONObject так как использую этот объект в функции для преобразования
+export type TGetCharacter = IGetCharacter & JSONObject
 
 export const getCharacter = (id: string): Promise<TGetCharacter> => requestBuilder({
     url: `${MAIN_URL_RICK_AND_MORTY}/character/${id}`

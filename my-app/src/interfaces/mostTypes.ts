@@ -14,3 +14,5 @@ export interface JSONObject {
 
 // универсальный тип для массива
 interface JSONArray extends Array<TJSONValue> {}
+
+export type TcssObject = string | { [key: string]: boolean }

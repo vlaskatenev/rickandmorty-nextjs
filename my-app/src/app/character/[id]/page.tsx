@@ -4,6 +4,7 @@ import { IServerSideComponentProp } from "@/interfaces/interfaces";
 import styles from './character.module.scss'
 import { JSONViewer } from "@/components/JSONViewer/JSONViewer";
 import { EpisodeList } from "@/components/EpisodeList/EpisodeList";
+import { CharacterInformation } from "@/components/CharacterInformation/CharacterInformation";
 
 async function Character({params}: IServerSideComponentProp<{id: string}>) {
     const idCharacter: string = typeof params.id === 'string' ? params.id : ''
@@ -12,18 +13,22 @@ async function Character({params}: IServerSideComponentProp<{id: string}>) {
   
     return (
       <div className={styles.root}>
-      
-      <CartoonCharacter character={character} width={250} height={250} />
-         
-        <br />
-        
-        Страница с персонажем: {character.name} 
+        <div className={styles.characterInfo}>
+          <CartoonCharacter character={character} width={250} height={250} />
 
-        <EpisodeList episodes={character.episode} />
+          <CharacterInformation character={character} />
+        </div>
         
-        <JSONViewer json={character} />
+         
+         <div className={styles.wrapper}>
+
+          <div className={styles.links}>
+
+            <EpisodeList episodes={character.episode}  title={'Серии с ' + character.name}/>
+          </div>
         
-        <br />
+          <JSONViewer json={character} className={styles.json}/>
+        </div>
         
       </div>
     )
