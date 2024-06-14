@@ -9,14 +9,11 @@ interface ICharacterInformation {
 export function CharacterInformation({character}: ICharacterInformation) {
 
   return (
-    <ContentField 
-        className={styles.infoCharacter} 
-        contentStyle={{color: '#fff', backgroundColor: 'rgba(255, 255, 255, 0)'}}
-        >
+    <div className={styles.infoCharacter}>
         <h4>name: {character.name}</h4>
         <p>status: {character.status}</p>
         <p>gender: {character.gender}</p>
         <p>location: {character.location.name}</p>
-    </ContentField>
+    </div>
   );
 }

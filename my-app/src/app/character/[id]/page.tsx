@@ -13,21 +13,15 @@ async function Character({params}: IServerSideComponentProp<{id: string}>) {
   
     return (
       <div className={styles.root}>
-        <div className={styles.characterInfo}>
-          <CartoonCharacter character={character} width={250} height={250} />
-
-          <CharacterInformation character={character} />
-        </div>
-        
-         
+         <div className={styles.characterInfo}>
+           <CartoonCharacter character={character} width={250} height={250} />
+           <CharacterInformation character={character} />
+         </div>
          <div className={styles.wrapper}>
-
-          <div className={styles.links}>
-
-            <EpisodeList episodes={character.episode}  title={'Серии с ' + character.name}/>
-          </div>
-        
-          <JSONViewer json={character} className={styles.json}/>
+           <div className={styles.links}>
+             <EpisodeList episodes={character.episode}  title={'Серии с ' + character.name}/>
+           </div>
+           <JSONViewer json={character} className={styles.json}/>
         </div>
         
       </div>

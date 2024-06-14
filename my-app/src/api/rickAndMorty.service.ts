@@ -1,4 +1,4 @@
-import { IGetCharacter } from "@/interfaces/interfaces"
+import { Episode, IGetCharacter } from "@/interfaces/interfaces"
 import { MAIN_URL_RICK_AND_MORTY } from "./variables"
 import { requestBuilder } from "./requestBuilder"
 import { JSONObject } from "@/interfaces/mostTypes"
@@ -22,5 +22,9 @@ export const getCharacter = (id: string): Promise<TGetCharacter> => requestBuild
 })
 
 export const getMultipleCharacters = (nums: number[]): Promise<TGetCharacter[]> => requestBuilder({
-    url: `${MAIN_URL_RICK_AND_MORTY}/character/1,${nums}`
+    url: `${MAIN_URL_RICK_AND_MORTY}/character/${nums}`
+})
+
+export const getEpisodeCharacters = (id: string): Promise<Episode> => requestBuilder({
+    url: `${MAIN_URL_RICK_AND_MORTY}/episode/${id}`
 })
