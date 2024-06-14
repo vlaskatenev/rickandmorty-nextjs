@@ -25,7 +25,6 @@ export function CartoonCharacter({character, isSmallDescription, width, height}:
             
             {isSmallDescription ? <ContentField 
                 className={cn(styles.infoCharacter, {[styles.smallImageDescription]: isSmallDescription})} 
-                // contentStyle={{color: 'black', backgroundColor: 'rgba(255, 255, 255, 0)'}}
                 >
                 <div className={cn(styles.round, {[styles.roundDeadCharacter]: character.status === 'Dead'})}/>
                 {character.name}: {isSmallDescription ? '' : character.status} <br/>

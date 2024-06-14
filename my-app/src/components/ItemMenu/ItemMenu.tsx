@@ -8,7 +8,6 @@ import styles from './ItemMenu.module.scss';
 const ItemMenu: FC<IMenuItem> = ({ type, slug, hover, theme, name, icon, modalId, link, altText }) => {
 
   const genLinkPath = () => {
-    if(type === "categories") return `/categories/${slug}`;
     return `/${slug}`;
   }
 

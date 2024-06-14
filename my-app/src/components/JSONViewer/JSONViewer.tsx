@@ -4,7 +4,7 @@ import { TJSONValue } from '@/interfaces/mostTypes'
 import { ContentField } from '@/shared/ContentField/ContentField'
 
 
-interface IJSONViewer { json: TJSONValue, className: string | { [key: string]: boolean } }
+interface IJSONViewer { json: TJSONValue, className?: string | { [key: string]: boolean } }
 
 export function JSONViewer({ json, className }: IJSONViewer) {
     

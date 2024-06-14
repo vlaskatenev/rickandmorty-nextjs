@@ -45,7 +45,7 @@ export interface IMenuItem {
   altText: string,
 }
 
-export interface Episode {
+export interface TEpisode {
   id: number;
   name: string;
   air_date: string;
@@ -53,4 +53,16 @@ export interface Episode {
   characters: string[];
   url: string;
   created: string;
+}
+
+interface InfoEpisodes {
+  count: number
+  pages: number
+  next: string | null
+  prev: string | null
+}
+
+export interface IEpisodes {
+  info: InfoEpisodes
+  results: TEpisode[];
 }
