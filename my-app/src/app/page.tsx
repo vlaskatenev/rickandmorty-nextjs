@@ -9,9 +9,8 @@ async function Home() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
           
-          {characters.map(character => <div className={styles.tile}>
+          {characters.map(character => <div className={styles.tile} key={character.id} >
             <CartoonCharacter 
-              key={character.id} 
               character={character} 
               isSmallDescription 
               width={200} 
