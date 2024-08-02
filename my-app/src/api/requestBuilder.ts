@@ -3,15 +3,16 @@ interface IrequestBuilder<Res> {
     initialData?: Res
 }
 
-export const requestBuilder = async <Res>({ url, initialData }: IrequestBuilder<Res>): Promise<Res> => { 
+export const requestBuilder = async <Res>(params: IrequestBuilder<Res>): Promise<Res> => {
+    const { url, initialData } = params
     let result
+
     try {
         result = await fetch(url).then((res) => res.json())
 
-        if(result.error) {
+        if (result.error) {
             throw new Error(JSON.stringify(result))
         }
-
     } catch (error) {
         if (initialData) result = initialData
         console.error(
@@ -19,8 +20,9 @@ export const requestBuilder = async <Res>({ url, initialData }: IrequestBuilder<
             ${error}
              url: ${url}
             -----end-----
-                `)
+                `,
+        )
     }
-    
+
     return result
 }

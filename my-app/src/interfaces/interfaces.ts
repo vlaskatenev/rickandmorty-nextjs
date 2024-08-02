@@ -1,3 +1,13 @@
+  interface Origin {
+    name: string
+    url: string
+  }
+
+interface Location {
+    name: string
+    url: string
+  }
+
 export interface IGetCharacter {
     id: number
     name: string
@@ -12,18 +22,8 @@ export interface IGetCharacter {
     url: string
     created: string
   }
-  
-  interface Origin {
-    name: string
-    url: string
-  }
-  
-interface Location {
-    name: string
-    url: string
-  }
 
-  export interface IServerSideComponentProp<
+export interface IServerSideComponentProp<
     Params,
     SearchParams = undefined,
 > {
@@ -36,7 +36,7 @@ export interface IMenuItem {
   name: string,
   slug: string,
   icon?: string,
-  theme?: "multi_layered",
+  theme?: 'multi_layered',
   link?: string,
   colors?: string[],
   hover?: string,

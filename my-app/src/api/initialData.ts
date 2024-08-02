@@ -1,9 +1,9 @@
 export const initialDataGetEpisodes = {
-    results: [], 
+    results: [],
     info: {
         count: 0,
         pages: 0,
-        next:  null,
-        prev:  null
-    }
+        next: null,
+        prev: null,
+    },
 }

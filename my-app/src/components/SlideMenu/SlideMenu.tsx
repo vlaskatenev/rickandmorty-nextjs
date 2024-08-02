@@ -11,19 +11,16 @@ type SlideMenuProps = {
   };
 }
 
-const SlideMenu: FC<SlideMenuProps> = ({categories, className}) => {
-
-  return (
+const SlideMenu: FC<SlideMenuProps> = ({ categories, className }) => (
     <nav className={cn(styles.root, className?.root)}>
-      <ul className={styles.menu}>
-        {
-          categories.map(menuItem => (
-            <ItemMenu key={menuItem.id} {...menuItem} />
-          ))
-        }
-      </ul>
+        <ul className={styles.menu}>
+            {
+                categories.map((menuItem) => (
+                    <ItemMenu key={menuItem.id} {...menuItem} />
+                ))
+            }
+        </ul>
     </nav>
-  );
-};
+)
 
-export default SlideMenu;
+export default SlideMenu
