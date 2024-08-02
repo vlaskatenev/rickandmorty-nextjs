@@ -1,0 +1,14 @@
+{
+  // Настройки для stylelint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  // Настройки для Prettier
+  "editor.formatOnSave": true,
+  // Убедитесь, что Prettier используется как форматтер по умолчанию
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Включение Prettier для файлов SCSS
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

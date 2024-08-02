@@ -1,26 +1,26 @@
 .root {
-    margin: auto;
-    width: 1024px;
-    position: relative;
+  margin: auto;
+  width: 1024px;
+  position: relative;
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
 }
 
 .links {
-    width: 45%;
+  width: 45%;
 }
 
 .json {
-    width: 45%;   
+  width: 45%;
 }
 
 .characterInfo {
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
 }

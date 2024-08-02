@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:ts": "eslint \"**/*.{ts,tsx}\"",
-    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:ts": "next lint \"**/*.{ts,tsx}\"",
+    "lint:ts:fix": "next lint \"**/*.{ts,tsx}\" --fix",
+    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "build-storybook": "storybook build -c ./config/storybook"
   },
@@ -39,6 +41,11 @@
     "eslint-plugin-storybook": "^0.8.0",
     "sass": "^1.75.0",
     "storybook": "^8.2.6",
+    "stylelint": "^16.8.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.4.1",
     "typescript": "^5"
   }
 }
