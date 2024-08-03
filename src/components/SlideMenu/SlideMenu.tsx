@@ -5,7 +5,7 @@ import ItemMenu from '@/components/ItemMenu/ItemMenu'
 import styles from './SlideMenu.module.scss'
 
 type SlideMenuProps = {
-  categories: IMenuItem[],
+  categories: IMenuItem,
   className?: {
     root: string;
   };
