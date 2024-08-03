@@ -39,6 +39,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^14.2.5",
     "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^8.0.3",
     "sass": "^1.75.0",
     "storybook": "^8.2.6",
     "stylelint": "^16.8.1",
@@ -46,7 +47,6 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.4.1",
-    "typescript": "^5",
-    "husky": "^8.0.0"
+    "typescript": "^5"
   }
 }
