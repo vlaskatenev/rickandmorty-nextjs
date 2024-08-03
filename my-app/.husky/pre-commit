@@ -1,4 +1,4 @@
-npm run build
+npm run buildw
 npm run lint:ts
 npm run lint:scss
 npm run storybook:build
