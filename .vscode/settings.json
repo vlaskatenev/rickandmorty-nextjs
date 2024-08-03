@@ -5,10 +5,44 @@
   },
   // Настройки для Prettier
   "editor.formatOnSave": true,
-  // Убедитесь, что Prettier используется как форматтер по умолчанию
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   // Убедитесь, что Prettier используется как форматтер по умолчанию
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
   // Включение Prettier для файлов SCSS
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+
+  "editor.minimap.enabled": false,
+
+	// Внешний вид
+	"editor.glyphMargin": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+    
+    // Настройки для Breadcrumbs
+	"breadcrumbs.icons": false,
+	"breadcrumbs.showKeys": false,
+	"breadcrumbs.showFiles": false,
+	"breadcrumbs.symbolPath": "off",
+	"breadcrumbs.showArrays": false,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showClasses": false,
+	"breadcrumbs.showMethods": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showFunctions": false,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showConstructors": false,
+
+    // включаем переход по клику на класс или функцию в другой файл без открытия превью
+    "editor.gotoLocation.multipleDefinitions": "goto",
+	
+	"editor.stickyScroll.scrollWithEditor": false,
+	"workbench.tree.enableStickyScroll": false,
+	"editor.stickyScroll.enabled": false,
+
+	"window.commandCenter": false,
+
+	// "workbench.statusBar.visible": false,
 }

@@ -1,6 +1,7 @@
 import { IGetCharacter } from '@/interfaces/interfaces'
+import { JSONObject } from '@/interfaces/mostTypes'
 
-export const mockDataCartoonCharacter: IGetCharacter = {
+export const mockDataCartoonCharacter: IGetCharacter & JSONObject = {
     id: 258,
     name: 'Pawnshop Clerk',
     status: 'Alive',
@@ -16,9 +17,7 @@ export const mockDataCartoonCharacter: IGetCharacter = {
         url: '/',
     },
     image: '',
-    episode: [
-        '/',
-    ],
+    episode: ['https://rickandmortyapi.com/api/testData'],
     url: '/',
     created: '2017-12-31T13:30:33.611Z',
 }

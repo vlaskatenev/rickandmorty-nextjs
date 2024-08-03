@@ -4,7 +4,7 @@ import './globals.css'
 import SlideMenu from '@/components/SlideMenu/SlideMenu'
 import categories from '@/db/itemsMenu'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['cyrillic'] })
 
 export const metadata: Metadata = {
     title: 'Рик и Морти пет проект',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
     children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
     return (
         <html lang="ru">
