@@ -1,2 +1,9 @@
 
-echo 'Pre-commit hook works!2'
+echo 'Pre-commit hook start!'
+
+npm run build
+npm run lint:ts
+npm run lint:scss
+npm run storybook:build
+
+echo 'Pre-commit hook end!'
