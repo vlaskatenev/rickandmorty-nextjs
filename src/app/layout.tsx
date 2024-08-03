@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import './globals.scss'
 import SlideMenu from '@/components/SlideMenu/SlideMenu'
 import categories from '@/db/itemsMenu'
 
