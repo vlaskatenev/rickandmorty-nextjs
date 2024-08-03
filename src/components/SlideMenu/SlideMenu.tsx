@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import cn from 'classnames'
 import { IMenuItem } from '@/interfaces/interfaces'
-import ItemMenu from '@/components/ItemMenu/ItemMenu'
+import ItemMenu from "@/components/ItemMenu/ItemMenu";
 import styles from './SlideMenu.module.scss'
 
 type SlideMenuProps = {
