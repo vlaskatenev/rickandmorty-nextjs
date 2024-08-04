@@ -6,6 +6,7 @@ echo 'Pre-commit hook start!'
 npm run build
 npm run lint:ts
 npm run lint:scss
+npm run unit
 npm run storybook:build
 
 echo 'Pre-commit hook end!'

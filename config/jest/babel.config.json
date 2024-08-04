@@ -1,0 +1,16 @@
+{
+    "presets": [
+      "@babel/preset-env", 
+      "@babel/preset-typescript", 
+      // @babel/preset-react нужен для работы с jest-dom
+      ["@babel/preset-react", {
+        // добавили чтобы в тестах компонентов tsx не импортировать React
+        // По сути React этим параметром сделали глобальным
+        "runtime": "automatic"
+      }]
+    ],
+    "plugins": [
+      // "i18next-extract"
+    ]
+  }
+  

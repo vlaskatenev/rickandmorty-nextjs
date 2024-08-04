@@ -12,6 +12,7 @@
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook",
+    "unit": "jest --config ./config/jest/jest.config.ts",
     "prepare": "husky"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "7.16.7",
     "@chromatic-com/storybook": "^1.6.1",
     "@storybook/addon-essentials": "^8.2.6",
     "@storybook/addon-interactions": "^8.2.6",
@@ -35,11 +37,13 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
+    "@types/jest": "27.4.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^14.2.5",
     "eslint-plugin-storybook": "^0.8.0",
     "husky": "^8.0.3",
+    "jest": "27.5.1",
     "sass": "^1.75.0",
     "storybook": "^8.2.6",
     "stylelint": "^16.8.1",
@@ -47,6 +51,7 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.4.1",
+    "ts-node": "^10.5.0",
     "typescript": "^5"
   }
 }

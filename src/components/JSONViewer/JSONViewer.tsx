@@ -1,5 +1,5 @@
 import styles from '@/components/JSONViewer/JSONViewer.module.scss'
-import { syntaxHighlightJSON } from '@/helpers/syntaxHighlightJSON'
+import { syntaxHighlightJSON } from '@/helpers/syntaxHighlightJSON/syntaxHighlightJSON'
 import { TJSONValue } from '@/interfaces/mostTypes'
 import { ContentField } from '@/shared/ContentField/ContentField'
 
